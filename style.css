@@ -5,6 +5,7 @@
     --text-color: #e0e0e0;
     --heading-color: #ffffff;
     --accent-color: #bb86fc;
+    --more-accent-color: #ccaef1;
     --border-color: #333333;
 }
 
@@ -12,6 +13,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+header h1{
+    transition: transform .9s ease-in-out;
+}
+header:hover h1{
+    transform: rotate(calc(360deg * 10));
 }
 
 body {
@@ -129,7 +137,7 @@ main {
 
 /* Hover Effects */
 .info-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, margin-left 0.3s ease;
 }
 
 .info-card:hover {
@@ -139,15 +147,25 @@ main {
 }
 
 .info-card:hover p {
-    color: #8c31fa;
+    color: var(--more-accent-color);
     font-weight: bold;
-
 
     transition: color 1s, font-weight .4s
 }
 
 .info-card p {
     transition: color 1s, font-weight .4s
+}
+
+.info-card h2{
+    text-align: center;
+    width: 0;
+    transition: width 1s
+}
+
+.info-card:hover h2 {
+    width: 100%;
+    transition: width 1s
 }
 
 
