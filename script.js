@@ -32,4 +32,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Update age every day (86,400,000 milliseconds = 24 hours)
     setInterval(updateAge, 86_400_000);
+
+
+
 });
+
+function goto(link){
+    window.open(link, '_blank');
+}

@@ -35,6 +35,12 @@ body {
     padding: 2rem;
 }
 
+.footer{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
 header {
     text-align: center;
     margin-bottom: 2rem;
@@ -160,18 +166,43 @@ main {
 .info-card h2{
     text-align: center;
     width: 0;
-    transition: width 1s
+    text-decoration-line: none;
+    transition: width 1s ease-in-out, text-decoration-line 5s ease-in-out;
 }
 
 .info-card:hover h2 {
     width: 100%;
-    transition: width 1s
+    text-decoration-line: underline;
+    transition: width 1s ease-in-out, text-decoration-line 5s ease-in-out;
+}
+
+.footer-btn {
+    background-color:#1e1e1e;
+    border-radius:28px;
+    border:1px solid #ffffff;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:20px;
+    padding:16px 31px;
+    text-decoration:none;
+}
+.footer-btn:hover {
+    background-color:#1e1e1e;
+}
+.footer-btn:active {
+    position:relative;
+    top:1px;
 }
 
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
+        padding: 1rem;
+    }
+    .footer{
         padding: 1rem;
     }
 
