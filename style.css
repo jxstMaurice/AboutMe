@@ -99,10 +99,6 @@ main {
     gap: 1rem;
 }
 
-/* Skills Section Styles */
-.skills-card {
-    flex: 1 1 100%;
-}
 
 .skills-container {
     margin-top: 1.5rem;
