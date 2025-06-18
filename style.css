@@ -33,6 +33,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
+    position: relative;
 }
 
 .footer{
@@ -199,6 +200,39 @@ main {
     padding: 2rem;
 }
 
+/* Language selector styles */
+.language-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.lang-btn {
+    background-color: var(--card-bg-color);
+    border-radius: 20px;
+    border: 1px solid var(--text-color);
+    cursor: pointer;
+    color: var(--text-color);
+    font-family: Arial, serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background-color: #252525;
+    color: var(--more-accent-color);
+}
+
+.lang-btn.active {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border-color: var(--accent-color);
+    font-weight: bold;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
@@ -216,10 +250,30 @@ main {
     h1 {
         font-size: 2rem;
     }
+
+    .language-selector {
+        top: 10px;
+        right: 10px;
+    }
+
+    .lang-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
 
 @media (max-width: 480px) {
     .info-card {
         flex: 1 1 100%;
+    }
+
+    .language-selector {
+        top: 5px;
+        right: 5px;
+    }
+
+    .lang-btn {
+        font-size: 12px;
+        padding: 6px 12px;
     }
 }
