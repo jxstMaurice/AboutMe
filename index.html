@@ -4,74 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>About Me</h1>
+            <h1 data-i18n="aboutMe">About Me</h1>
+            <div class="language-selector">
+                <button id="lang-toggle" class="lang-btn" data-current-lang="en">Deutsch</button>
+            </div>
         </header>
 
         <main>
             <section class="info-card">
-                <h2>Name</h2>
+                <h2 data-i18n="name">Name</h2>
                 <p>Maurice</p>
             </section>
 
             <section class="info-card">
-                <h2>Age</h2>
-                <p><span id="age">0</span> years old</p>
+                <h2 data-i18n="age">Age</h2>
+                <p><span id="age">0</span> <span data-i18n="yearsOld">years old</span></p>
             </section>
 
             <section class="info-card">
-                <h2>Nationality</h2>
-                <p>Austria</p>
+                <h2 data-i18n="nationality">Nationality</h2>
+                <p data-i18n="austria">Austria</p>
             </section>
 
             <section class="info-card">
-                <h2>Gender</h2>
-                <p>Male</p>
+                <h2 data-i18n="gender">Gender</h2>
+                <p data-i18n="male">Male</p>
             </section>
 
             <section class="info-card">
-                <h2>Sexuality</h2>
-                <p>Bisexual</p>
+                <h2 data-i18n="sexuality">Sexuality</h2>
+                <p data-i18n="bisexual">Bisexual</p>
             </section>
 
-            <section class="info-card skills-card">
-                <h2>Programming<br>Skills</h2>
-                <div class="skills-container">
-                    <div class="skill-item">
-                        <h3>Java</h3>
-                        <div class="skill-level">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <h3>C#</h3>
-                        <div class="skill-level">
-                            <div class="skill-progress" style="width: 60%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <h3>Python</h3>
-                        <div class="skill-level">
-                            <div class="skill-progress" style="width: 56%"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </main>
     </div>
     <div class="footer">
         <header>
-            <h1>The End & Credits</h1>
+            <h1 data-i18n="endCredits">The End & Credits</h1>
         </header>
         <main>
             <section class="footer-info-card">
-                <h2>Useful Buttons !!!</h2>
-                <button class="footer-btn" onClick=goto("https://github.com/avgMaurice/AboutMe")>this Project</button>
-                <button class="footer-btn" onClick=goto("https://www.youtube.com/@avgMaurice")>Youtube</button>
+                <h2 data-i18n="usefulButtons">Useful Buttons !!!</h2>
+                <button class="footer-btn" onClick=goto("https://github.com/jxstMaurice")>Github</button>
+                <button class="footer-btn" onClick=goto("https://www.youtube.com/@jxstMaurice")>Youtube</button>
                 <button class="footer-btn" onClick=goto("https://discordlookup.com/user/599914856296218624")>Discord</button>
             </section>
         </main>
